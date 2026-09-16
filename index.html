@@ -20,14 +20,30 @@
             margin: 0 auto;
             padding: 16px;
         } 
-        article{
-            display: flex;
+        article {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #2b5788;
+            padding-bottom: 20px;
         }
-        
         main img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
+        }
+        button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-right: 5px;
+            color: #000;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #e6b800;
         }
     </style>
 </head>
@@ -36,52 +52,86 @@
         <h1>Meu blog de anime</h1>
         <p>Vou compartilhar conhecimentos sobre meus animes</p>
     </header>
+    
     <main>
+        
         <article>
-
             <img src="isa.png" alt="Personagens de Jujutsu Kaisen em combate">
-            
             <h2>Meu primeiro post</h2>
-            <p> Olá, sejam bem-vindos ao meu blog. Vou compartilhar meus animes favoritos com vocês!</p>
-               <button>⭐<span>0</span></button>
-               <button>⭐<span>0</span></button>
+            <p><strong>Olá, sejam bem-vindos ao meu blog. Vou compartilhar meus animes favoritos com vocês!</strong></p>
             
-               <div>
-        </article>
-        </article>
-        <p>Por: Isabelly Vitoria</p>
-        
-        
-        </div>
-        <img src="isab.png.jpeg" alt="Personagens de Attack on Titan">
-        
-        <h2>Meu primeiro post</h2>
-        <p>Nossa Jujutsu Kaisen é simplesmente surreal de tão bom! Sério, o Mappa não brinca quando o assunto é entregar uma animação perfeita. As lutas são tão bem trabalhadas que dá vontade de reassistir a mesma cena umas dez vezes só para pegar todos os detalhes da expansão de domínio.</p>
-           <button>⭐<span>0</span></button>
-           <button>⭐<span>0</span></button>
-        
-        </div>
-    </main> 
-</body> 
-<script>
-    const botoes = document.querySelectorAll("button");
+            <p><strong>Satoru Gojo:</strong> O homem mais forte do mundo não é apenas um feiticeiro, ele é um evento cultural ambulante. Com aquela venda nos olhos que esconde os olhos mais lindos do universo e uma marra inabalável, ele chega debochando de Sukuna e dizendo que "vai dar tudo certo" porque ele está aqui. O verdadeiro significado de "poderoso, belo e dono de si".</p>
 
-    botoes.forEach( function(botao){
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado(){
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-           if (curtiu === "false"){
-                texto.textcontent
-                curti=true;
-            } else{
-                    texto.textcontent--;
-                    curtiu=false
-                }
-           }
-           
-           
-          
-        } 
+            <p><strong>Ryomen Sukuna:</strong> O Rei das Maldições não deita para ninguém. O homem acorda, decide que vai destruir Shibuya inteira só de tédio, joga um Domain Expansion displicente e ainda sai andando com as mãos no bolso. É vilão? É. Mas entrega um servilismo estético impecável.</p>
+
+            <p><strong>Yuji Itadori:</strong> Nosso menino de ouro sofre mais que boleiro em final de campeonato, mas continua firme, forte e pronto para socar a cara de qualquer desalmado com um "Divergent Fist" bem dado.</p>
+
+            <p><strong>Maki Zenin:</strong> A patroa absoluta! Pegou a própria família abusiva, botou fogo em tudo (literalmente) e virou uma máquina de combate física que faz qualquer maldição tremer na base. Sem energia amaldiçoada? Sem problema, o soco dela resolve.</p>
             
+            <p><em>Por: Isabelly Vitoria</em></p>
+            
+            
+            <div>
+                <button type="button">⭐ <span>0</span></button>
+                <button type="button">⭐ <span>0</span></button>
+            </div>
+        </article>
+
+        
+        <article>
+            <img src="isab.png.jpeg" alt="Personagens de Attack on Titan">
+            <h2>Meu segundo post</h2>
+            <p><strong>O Elenco de Milhões (e Seus Traumas)</strong></p>
+            
+            <p><strong>Eren Yeager:</strong> Começou o anime querendo matar todos os titãs chorando no chão e terminou... bem, digamos que ele virou o protagonista/vilão mais complexo e controverso dos animes. O homem simplesmente resetou o tabuleiro geopolítico do mundo por livre e espontânea vontade. É errado? É. Mas entregou um enredo inesquecível!</p>
+
+            <p><strong>Levi Ackerman:</strong> O capitão mais baixinho, porém o mais letal do universo. Se o Levi saca as espadas e começa a girar no ar (o famoso Beyblade humano), pode ter certeza de que o titã mais poderoso vai virar purê em segundos. Tudo isso enquanto mantém o tédio e a mania de limpeza impecáveis. Um verdadeiro ícone!</p>
+
+            <p><strong>Mikasa Ackerman:</strong> A força da natureza em forma de mulher. Protetora oficial do Eren, fria, calculista e com uma habilidade em combate que deixa qualquer um no chinelo. Ninguém mexe com a Mikasa e sai ileso.</p>
+
+            <p><strong>Hange Zoe:</strong> A cientista mais caótica e apaixonada por titãs que você respeita. Enquanto todo mundo está correndo pela vida, Hange está lá analisando a composição da pele de um monstro gigante com um brilho nos olhos. Perfeita!</p>
+
+            <p><strong>Os Maiores Babados da Ilha de Paradis</strong></p>
+            <p><strong>As Muralhas:</strong> Passamos temporadas inteiras achando que eram só proteção contra gigantes... para descobrir que as muralhas são feitas de titãs colossais espremidos lá dentro. Um verdadeiro plot twist de novela das nove!</p>
+
+            <p><strong>A "Freedom":</strong> A busca pela liberdade que custa a humanidade inteira. Eren e o famoso "tatakae" (lute) viraram meme, mas a verdade é que o peso psicológico desse anime não poupa ninguém.</p>
+
+            <p><strong>O Porão do Eren:</strong> O segredo mais guardado da história que mudou completamente a perspectiva de tudo o que achávamos que sabíamos sobre o mundo lá fora.</p>
+            
+            <p><em>Por: Isabelly Vitoria</em></p>
+
+            
+            <div>
+                <button type="button">⭐ <span>0</span></button>
+                <button type="button">⭐ <span>0</span></button>
+            </div>
+        </article>
+    </main> 
+
+    <script>
+        
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function(botao) {
+            let curtiu = false;
+            
+            botao.addEventListener("click", function() {
+                let texto = botao.querySelector("span");
+                let valorAtual = parseInt(texto.textContent); 
+
+                if (curtiu === false) {
+                    valorAtual++;   
+                    curtiu = true;
+                    botao.style.backgroundColor = "#ffaa00"; 
+                } else {
+                    valorAtual--;   
+                    curtiu = false;
+                    botao.style.backgroundColor = "#ffcc00"; 
+                }
+
+                texto.textContent = valorAtual; 
+            });
+        });
+    </script>
+</body> 
+</html>
