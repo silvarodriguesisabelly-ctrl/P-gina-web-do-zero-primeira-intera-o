@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        
+        body.dark-mode {
+            background-color: #141913;
+            color: #e6ebe4;
+        }
+
+        
+        .theme-toggle {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            border: 2px solid #526649;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.06);
+        }
+
+        
+        .theme-icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #394733 50%, #ffffff 50%);
+            border: 1px solid #394733;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        
+        body.dark-mode .theme-toggle {
+            background-color: #1f261d;
+            border-color: #8da383;
+        }
+
+        body.dark-mode .theme-icon {
+            background: linear-gradient(90deg, #ffffff 50%, #394733 50%);
+            border-color: #8da383;
+        }
+    </style>
 </head>
 <body> 
     <header> 
@@ -16,22 +73,21 @@
         
         <article>
             <img src="isa.png" alt="Personagens de Jujutsu Kaisen em combate">
-           <h2>Meu Primeiro Post: O Universo Implacável de Jujutsu Kaisen</h2>
+            <h2>Meu Primeiro Post: O Universo Implacável de Jujutsu Kaisen</h2>
 
-<p><strong>Olá, sejam muito bem-vindos ao meu blog!</strong> Se você é apaixonado por animações japonesas, batalhas eletrizantes e personagens com personalidades marcantes, chegou ao lugar certo. Para dar o pontapé inicial nesta jornada, decidi começar falando sobre uma das obras mais impactantes dos últimos tempos. Abaixo, compartilho minhas impressões detalhadas sobre os personagens que absolutamente dominam a cena e tornam essa história inesquecível!</p>
+            <p><strong>Olá, sejam muito bem-vindos ao meu blog!</strong> Se você é apaixonado por animações japonesas, batalhas eletrizantes e personagens com personalidades marcantes, chegou ao lugar certo. Para dar o pontapé inicial nesta jornada, decidi começar falando sobre uma das obras mais impactantes dos últimos tempos. Abaixo, compartilho minhas impressões detalhadas sobre os personagens que absolutamente dominam a cena e tornam essa história inesquecível!</p>
 
-<p><strong>Satoru Gojo — A Divindade Inabalável:</strong> O homem mais forte do mundo não é apenas um feiticeiro jujutsu de classe especial; ele é um verdadeiro evento cultural ambulante. Protegido pela lendária técnica do Infinito e ostentando o Seis Olhos — escondidos sob sua icônica venda —, Gojo redefine o conceito de carisma e soberba. Ele entra em qualquer campo de batalha com um deboche natural, encarando ameaças milenares como o próprio Sukuna com um sorriso no rosto e a promessa reconfortante de que "vai dar tudo certo" simplesmente porque ele está presente. É a combinação perfeita entre poder absoluto, estética impecável e uma atitude inabalável que atrai todos os refletores para si.</p>
+            <p><strong>Satoru Gojo — A Divindade Inabalável:</strong> O homem mais forte do mundo não é apenas um feiticeiro jujutsu de classe especial; ele é um verdadeiro evento cultural ambulante. Protegido pela lendária técnica do Infinito e ostentando o Seis Olhos — escondidos sob sua icônica venda —, Gojo redefine o conceito de carisma e soberba. Ele entra em qualquer campo de batalha com um deboche natural, encarando ameaças milenares como o próprio Sukuna com um sorriso no rosto e a promessa reconfortante de que "vai dar tudo certo" simplesmente porque ele está presente. É a combinação perfeita entre poder absoluto, estética impecável e uma atitude inabalável que atrai todos os refletores para si.</p>
 
-<p><strong>Ryomen Sukuna — O Absoluto Rei das Maldições:</strong> Sukuna é a personificação do egoísmo e da força bruta no seu estado mais puro. Ele não deve lealdade a ninguém e move o mundo ao seu redor puramente por capricho. O Rei das Maldições acorda de um sono secular e, por puro tédio, é capaz de devastar distritos inteiros como Shibuya sem hesitar por um segundo. Ao conjurar sua Expansão de Domínio com uma displicência assustadora, ele caminha entre os escombros mantendo a postura serena e implacável. Embora seja um vilão cruel e impiedoso, é impossível negar que ele entrega uma presença de cena magistral e uma imposição visual que dita o ritmo da narrativa.</p>
+            <p><strong>Ryomen Sukuna — O Absoluto Rei das Maldições:</strong> Sukuna é a personificação do egoísmo e da força bruta no seu estado mais puro. Ele não deve lealdade a ninguém e move o mundo ao seu redor puramente por capricho. O Rei das Maldições acorda de um sono secular e, por puro tédio, é capaz de devastar distritos inteiros como Shibuya sem hesitar por um segundo. Ao conjurar sua Expansão de Domínio com uma displicência assustadora, ele caminha entre os escombros mantendo a postura serena e implacável. Embora seja um vilão cruel e impiedoso, é impossível negar que ele entrega uma presença de cena magistral e uma imposição visual que dita o ritmo da narrativa.</p>
 
-<p><strong>Yuji Itadori — O Coração de Ferro e Determinação:</strong> Nosso garoto de ouro carrega o peso do mundo nas costas e enfrenta provações emocionais e físicas que testariam o limite de qualquer um. Mesmo sendo empurrado constantemente ao seu ponto de ruptura e sofrendo perdas devastadoras ao longo da jornada, Yuji recusa-se a desistir. Sua força de vontade e resiliência física são extraordinárias. Quando a situação exige, ele encara o perigo de frente, canalizando toda a sua determinação em golpes devastadores como o <em>Divergent Fist</em> e o lendário <em>KokuSen</em> (Punho Divergente e Black Flash), provando que o verdadeiro heroism se constrói na perseverança.</p>
+            <p><strong>Yuji Itadori — O Coração de Ferro e Determinação:</strong> Nosso garoto de ouro carrega o peso do mundo nas costas e enfrenta provações emocionais e físicas que testariam o limite de qualquer um. Mesmo sendo empurrado constantemente ao seu ponto de ruptura e sofrendo perdas devastadoras ao longo da jornada, Yuji recusa-se a desistir. Sua força de vontade e resiliência física são extraordinárias. Quando a situação exige, ele encara o perigo de frente, canalizando toda a sua determinação em golpes devastadores como o <em>Divergent Fist</em> e o lendário <em>KokuSen</em> (Punho Divergente e Black Flash), provando que o verdadeiro heroism se constrói na perseverança.</p>
 
-<p><strong>Maki Zenin — A Lenda da Vontade Inflexível:</strong> A verdadeira patroa de Jujutsu Kaisen! Enfrentando desde o nascimento o preconceito e o desprezo de sua própria família abusiva por não possuir energia amaldiçoada, Maki reescreveu seu próprio destino com determinação e aço. Ela transformou o que muitos viam como uma fraqueza em sua maior vantagem, alcançando uma restrição celestial que a tornou um ápice de força, velocidade e maestria com armas. Sem precisar de feitiçaria, sua presença no campo de batalha faz até as maldições mais antigas tremerem. Maki é o exemplo definitivo de superação, impondo seu respeito na base do talento puro e da força bruta.</p>
+            <p><strong>Maki Zenin — A Lenda da Vontade Inflexível:</strong> A verdadeira patroa de Jujutsu Kaisen! Enfrentando desde o nascimento o preconceito e o desprezo de sua própria família abusiva por não possuir energia amaldiçoada, Maki reescreveu seu próprio destino com determinação e aço. Ela transformou o que muitos viam como uma fraqueza em sua maior vantagem, alcançando uma restrição celestial que a tornou um ápice de força, velocidade e maestria com armas. Sem precisar de feitiçaria, sua presença no campo de batalha faz até as maldições mais antigas tremerem. Maki é o exemplo definitivo de superação, impondo seu respeito na base do talento puro e da força bruta.</p>
 
-<hr>
+            <hr>
 
-<p><em>Por: Isabelly Vitoria</em></p>
-            
+            <p><em>Por: Isabelly Vitoria</em></p>
             
             <div>
                 <button type="button">⭐ <span>0</span></button>
@@ -39,7 +95,6 @@
             </div>
         </article>
 
-        
         <article>
             <img src="isab.png.jpeg" alt="Personagens de Attack on Titan">
             
@@ -62,30 +117,29 @@
             
             <p><em>Por: Isabelly Vitoria</em></p>
 
-            
             <div>
                 <button type="button">⭐ <span>0</span></button>
                 <button type="button">⭐ <span>0</span></button>
             </div>
         </article>
- <article>
+
+        <article>
             <img src="jayparkgostoso.jpg" alt="Imagem do Jay Park">
-          <p> Park (Park Jae-beom) é uma das figuras mais completas e influentes do entretenimento asiático moderno. Ele revolucionou a forma como o hip-hop e o R&B são vistos na Coreia do Sul, mostrando que era possível sair da estrutura tradicional do K-pop e construir uma carreira independente de sucesso internacional.</p>
+            <p>Park (Park Jae-beom) é uma das figuras mais completas e influentes do entretenimento asiático moderno. Ele revolucionou a forma como o hip-hop e o R&B são vistos na Coreia do Sul, mostrando que era possível sair da estrutura tradicional do K-pop e construir uma carreira independente de sucesso internacional.</p>
 
-<p>Origens e Início no K-pop: Nascido em Edmonds, Washington (região metropolitana de Seattle), Jay Park cresceu imerso na cultura de rua e no breakdance (b-boying). Em 2008, foi descoberto pela JYP Entertainment e estreou como líder e vocalista principal do grupo 2PM. O grupo virou um fenômeno rapidamente, mas em 2009 ele acabou se desligando da formação e voltando para os Estados Unidos após a polêmica de posts antigos na internet.</p>
-<p>O Fenômeno do YouTube e Carreira Solo: No início de 2010, enquanto trabalhava em uma loja de pneus em Seattle, ele postou um cover caseiro da música <p>"Nothin' on You" (de B.o.B e Bruno Mars) no YouTube. O vídeo bateu milhões de visualizações em pouquíssimas horas e provou o tamanho da sua base de fãs. O impacto abriu portas para o lançamento do seu primeiro EP solo, Count on Me, e do álbum New Breed (2012), que alcançaram o topo das paradas sul-coreanas.</p>
-<p>Construção de um Império Independente: Em vez de assinar com outra grande agência tradicional de K-pop, Jay Park preferiu criar seu próprio caminho:
-AOMG (2013): Fundou a gravadora focada em hip-hop e R&B, reunindo alguns dos maiores produtores, rappers e cantores da cena sul-coreana.
-H1GHR MUSIC (2017):Criou um selo internacional ao lado do seu parceiro de longa data Cha Cha Malone, ajudando a lançar artistas sul-coreanos e talentos da sua cidade natal, Seattle.</p>
-<p>MORE VISION (2022): Após deixar o cargo de CEO da AOMG e da H1GHR MUSIC em 2021, ele iniciou este novo projeto voltado para agenciamento de artistas, grupos e produção de conteúdo.</p>
+            <p>Origens e Início no K-pop: Nascido em Edmonds, Washington (região metropolitana de Seattle), Jay Park cresceu imerso na cultura de rua e no breakdance (b-boying). Em 2008, foi descoberto pela JYP Entertainment e estreou como líder e vocalista principal do grupo 2PM. O grupo virou um fenômeno rapidamente, mas em 2009 ele acabou se desligando da formação e voltando para os Estados Unidos após a polêmica de posts antigos na internet.</p>
+            <p>O Fenômeno do YouTube e Carreira Solo: No início de 2010, enquanto trabalhava em uma loja de pneus em Seattle, ele postou um cover caseiro da música "Nothin' on You" (de B.o.B e Bruno Mars) no YouTube. O vídeo bateu milhões de visualizações em pouquíssimas horas e provou o tamanho da sua base de fãs. O impacto abriu portas para o lançamento do seu primeiro EP solo, Count on Me, e do álbum New Breed (2012), que alcançaram o topo das paradas sul-coreanas.</p>
+            <p>Construção de um Império Independente: Em vez de assinar com outra grande agência tradicional de K-pop, Jay Park preferiu criar seu próprio caminho:
+            AOMG (2013): Fundou a gravadora focada em hip-hop e R&B, reunindo alguns dos maiores produtores, rappers e cantores da cena sul-coreana.
+            H1GHR MUSIC (2017):Criou um selo internacional ao lado do seu parceiro de longa data Cha Cha Malone, ajudando a lançar artistas sul-coreanos e talentos da sua cidade natal, Seattle.</p>
+            <p>MORE VISION (2022): Após deixar o cargo de CEO da AOMG e da H1GHR MUSIC em 2021, ele iniciou este novo projeto voltado para agenciamento de artistas, grupos e produção de conteúdo.</p>
 
+            <p>Marco Internacional com a Roc Nation: Em 2017, Jay Park fez história ao se tornar o primeiro artista asiático-americano a assinar contrato de gerenciamento com a Roc Nation, a famosa gravadora e agência norte-americana fundada por Jay-Z.</p>
+            <p>Versatilidade e Empreendedorismo: Além da música, ele se destacou como produtor, jurado de programas de competição (como Show Me The Money, Asia's Got Talent e Peak Time), apresentador de talk show (The Season: Jay Park's Drive) e até lançou sua própria marca de soju tradicional (*Won Soju*), que virou febre de vendas na Coreia.</p>
 
-<p>Marco Internacional com a Roc Nation: Em 2017, Jay Park fez história ao se tornar o primeiro artista asiático-americano a assinar contrato de gerenciamento com a Roc Nation, a famosa gravadora e agência norte-americana fundada por Jay-Z.</p>
-<p>Versatilidade e Empreendedorismo: Além da música, ele se destacou como produtor, jurado de programas de competição (como Show Me The Money, Asia's Got Talent e Peak Time), apresentador de talk show (The Season: Jay Park's Drive) e até lançou sua própria marca de soju tradicional (*Won Soju*), que virou febre de vendas na Coreia.</p>
-
-<p>Sua identidade artística junta a cultura b-boy dos EUA, vocais suaves voltados ao R&B contemporâneo, rimas rápidas no rap e uma presença de palco marcada por coreografias marcantes.</p>
+            <p>Sua identidade artística junta a cultura b-boy dos EUA, vocais suaves voltados ao R&B contemporâneo, rimas rápidas no rap e uma presença de palco marcada por coreografias marcantes.</p>
             
- <p><em>Por: Isabelly Vitoria</em></p>
+            <p><em>Por: Isabelly Vitoria</em></p>
             
             <div>
                 <button type="button">⭐ <span>0</span></button>
@@ -95,26 +149,24 @@ H1GHR MUSIC (2017):Criou um selo internacional ao lado do seu parceiro de longa 
 
         <article>
             <img src="lngshot.jpg" alt="Imagem do LNGSHOT">
-          <p>LNGSHOT</p>
+            <p>LNGSHOT</p>
 
-<p>O LNGSHOT não surgiu do nada, e a história por trás da formação do grupo é bem massa. Como o Jay Park é um cara lendário na cena do hip-hop coreano e fundou a More Vision exatamente pra ter mais liberdade, ele queria montar um boy group que não parecesse "fabricado", sabe? A ideia era achar talentos brutos, com muita personalidade, e deixar os moleques moldarem a própria identidade.</p>
+            <p>O LNGSHOT não surgiu do nada, e a história por trás da formação do grupo é bem massa. Como o Jay Park é um cara lendário na cena do hip-hop coreano e fundou a More Vision exatamente pra ter mais liberdade, ele queria montar um boy group que não parecesse "fabricado", sabe? A ideia era achar talentos brutos, com muita personalidade, e deixar os moleques moldarem a própria identidade.</p>
 
-<p>Antes mesmo do debut oficial, eles já tavam fazendo barulho no underground e nas redes sociais. Eles lançaram a *4shoboiz Mixtape* no finalzinho de 2025 de um jeito super descontraído, quase como se fossem quatro amigos só curtindo no estúdio e soltando música pra galera. A faixa "Saucin'" foi um dos primeiros sons que fez a galera do K-pop ligar o alerta e pensar: "Peraí, esses caras têm um molho diferente".</p>
+            <p>Antes mesmo do debut oficial, eles já tavam fazendo barulho no underground e nas redes sociais. Eles lançaram a *4shoboiz Mixtape* no finalzinho de 2025 de um jeito super descontraído, quase como se fossem quatro amigos só curtindo no estúdio e soltando música pra galera. A faixa "Saucin'" foi um dos primeiros sons que fez a galera do K-pop ligar o alerta e pensar: "Peraí, esses caras têm um molho diferente".</p>
 
-<p>Aí, quando chegou janeiro de 2026, eles baixaram com o EP de estreia *Shot Callers*. A música de trabalho, "Moonwalkin'", tem aquela batida marcante, vocal suave mesclado com R&B clássico e um rap super fluido. Nas apresentações ao vivo, dá pra ver que eles focam muito no carisma e na presença de palco, em vez de ficarem totalmente travados em uma coreografia milimetricamente robótica.</p>
+            <p>Aí, quando chegou janeiro de 2026, eles baixaram com o EP de estreia *Shot Callers*. A música de trabalho, "Moonwalkin'", tem aquela batida marcante, vocal suave mesclado com R&B clássico e um rap super fluido. Nas apresentações ao vivo, dá pra ver que eles focam muito no carisma e na presença de palco, em vez de ficarem totalmente travados em uma coreografia milimetricamente robótica.</p>
 
-<p>Dá uma olhada nos quatro integrantes pra você se situar:</p>
+            <p>Dá uma olhada nos quatro integrantes pra você se situar:</p>
 
-<P>Ohyul: É o líder e vocalista. Ele passa uma vibe mais centrada e segura, liderando o grupo no palco e nas entrevistas.</p>
-<P>Ryul:O rapper principal do grupo. Ele tem um tom de voz bem marcante e traz aquela energia mais rua/hip-hop pras faixas.</p>
-<p>Um cara super versátil, que transita muito bem entre vocal e performance, dando equilíbrio pro som deles.</p>
-<P>Louis: O caçula (maknae) e vocalista principal. Apesar de ser o mais novo, o moleque tem uma extensão vocal gigante e segura os agudos do grupo.</p>
+            <p>Ohyul: É o líder e vocalista. Ele passa uma vibe mais centrada e segura, liderando o grupo no palco e nas entrevistas.</p>
+            <p>Ryul:O rapper principal do grupo. Ele tem um tom de voz bem marcante e traz aquela energia mais rua/hip-hop pras faixas.</p>
+            <p>Um cara super versátil, que transita muito bem entre vocal e performance, dando equilíbrio pro som deles.</p>
+            <p>Louis: O caçula (maknae) e vocalista principal. Apesar de ser o mais novo, o moleque tem uma extensão vocal gigante e segura os agudos do grupo.</p>
 
-<p>A comunidade de fãs, os SHOTTIES, tá crescendo rápido exatamente porque o som deles agrada tanto quem já curte K-pop quanto quem é mais do lado do R&B e Hip-Hop ocidental.</p>
-
-
+            <p>A comunidade de fãs, os SHOTTIES, tá crescendo rápido exatamente porque o som deles agrada tanto quem já curte K-pop quanto quem é mais do lado do R&B e Hip-Hop ocidental.</p>
             
- <p><em>Por: Isabelly Vitoria</em></p>
+            <p><em>Por: Isabelly Vitoria</em></p>
             
             <div>
                 <button type="button">⭐ <span>0</span></button>
@@ -122,16 +174,14 @@ H1GHR MUSIC (2017):Criou um selo internacional ao lado do seu parceiro de longa 
             </div>
         </article>
 
- <article>
+        <article>
             <img src="kinnporschegostoso.jpg" alt="Imagem da série Kinn Porsche">
-          <p>Kinn Porsche</p>
-          <p>A Trama PrincipoteA história começa com o Porsche (Apo Nattawin), um cara que trabalha como barman, é um lutador incrível, mas está super endividado tentando sustentar o irmão mais novo (o Porchay).   Um belo dia, o Kinn (Mile Phakphum), que é o herdeiro de uma família poderosíssima da máfia, surge correndo dos inimigos no meio da rua. O Porsche vê a cena, aceita salvar a pele do cara em troca de grana e mete a porrada nos perseguidores.   O Kinn fica tão impressionado com a habilidade dele que cisma que o Porsche precisa virar seu guarda-costas pessoal. O Porsche tenta enrolar, mas como a situação financeira apertou real, ele acaba aceitando. O problema é que o ambiente da máfia é super rígido, e a convivência dos dois no mesmo teto vira um misto de farpa, provocação e, claro, um fogo absurdo.   Os Outros Casais e PersonagensNão é só dos dois principais que a série vive, o elenco secundário rouba a cena bonito:Vegas & Pete: Esse é o casal mais intenso e caótico da série. Vegas é o primo meio psicopata da Segunda Família, e o Pete é o guarda-costas fofo e leal da Família Principal. Em um certo momento, o Pete cai numa cilada e acaba sequestrado pelo Vegas. A dinâmica deles entrega uma vibe meio cheia de altos e baixos emocionais que deixou todo mundo obcecado na época.   Kim & Porchay: O Kim (irmão do Kinn, interpretado pelo cantores Jeff Satur) se aproxima do Porchay (irmão do Porsche) com intenção de investigar o passado do Porsche. O problema é que o Chay é fãço do Kim, gerando um rolo emocional e um romance bem mais fofo/juvenil.   Thankhun: O irmão mais velho do Kinn que é simplesmente o alívio cômico perfeito da série. Ele é super espalhafato, odeia os negócios da máfia e vive fazendo drama com seus guarda-costas.   </p>
-          <p>Por que todo mundo surtou quando lançou?Qualidade de Cinema: A fotografia e a produção não parecem de um BL tradicional, tem cara de filme de ação mesmo.Química Bruta: A sintonia entre o Mile e o Apo é surreal. As cenas de tensão, os beijos e os momentos mais quentes foram super bem dirigidos.   Trilha Sonora: A música tema cantada pela banda Slot Machine e as faixas do Jeff Satur grudam na cabeça.É aquela série completa: tem tiroteio, facada, traição familiar e muito dorama romântico para maratonar!</p>
-          <p>kinnporsche é umas das melhores series para se assitir os atores são muito bons no que fazem atuan com todo o caraçãp deles é uma serie maravilhosa voce deveria vez uma serie que meche com o emocional de tabom quando assiti chorei muito de tanta emoção todos os atores capricharam nas atuaçao deles todos eles foram maravilhosos é a melhor serie de toda a minha vida toda pessoa que é fan de bl recomenda essa serie para ver </p>
-
-
+            <p>Kinn Porsche</p>
+            <p>A Trama PrincipoteA história começa com o Porsche (Apo Nattawin), um cara que trabalha como barman, é um lutador incrível, mas está super endividado tentando sustentar o irmão mais novo (o Porchay). Um belo dia, o Kinn (Mile Phakphum), que é o herdeiro de uma família poderosíssima da máfia, surge correndo dos inimigos no meio da rua. O Porsche vê a cena, aceita salvar a pele do cara em troca de grana e mete a porrada nos perseguidores. O Kinn fica tão impressionado com a habilidade dele que cisma que o Porsche precisa virar seu guarda-costas pessoal. O Porsche tenta enrolar, mas como a situação financeira apertou real, ele acaba aceitando. O problema é que o ambiente da máfia é super rígido, e a convivência dos dois no mesmo teto vira um misto de farpa, provocação e, claro, um fogo absurdo. Os Outros Casais e PersonagensNão é só dos dois principais que a série vive, o elenco secundário rouba a cena bonito:Vegas & Pete: Esse é o casal mais intenso e caótico da série. Vegas é o primo meio psicopata da Segunda Família, e o Pete é o guarda-costas fofo e leal da Família Principal. Em um certo momento, o Pete cai numa cilada e acaba sequestrado pelo Vegas. A dinâmica deles entrega uma vibe meio cheia de altos e baixos emocionais que deixou todo mundo obcecado na época. Kim & Porchay: O Kim (irmão do Kinn, interpretado pelo cantores Jeff Satur) se aproxima do Porchay (irmão do Porsche) com intenção de investigar o passado do Porsche. O problema é que o Chay é fãço do Kim, gerando um rolo emocional e um romance bem mais fofo/juvenil. Thankhun: O irmão mais velho do Kinn que é simplesmente o alívio cômico perfeito da série. Ele é super espalhafato, odeia os negócios da máfia e vive fazendo drama com seus guarda-costas.</p>
+            <p>Por que todo mundo surtou quando lançou?Qualidade de Cinema: A fotografia e a produção não parecem de um BL tradicional, tem cara de filme de ação mesmo.Química Bruta: A sintonia entre o Mile e o Apo é surreal. As cenas de tensão, os beijos e os momentos mais quentes foram super bem dirigidos. Trilha Sonora: A música tema cantada pela banda Slot Machine e as faixas do Jeff Satur grudam na cabeça.É aquela série completa: tem tiroteio, facada, traição familiar e muito dorama romântico para maratonar!</p>
+            <p>kinnporsche é umas das melhores series para se assitir os atores são muito bons no que fazem atuan com todo o caraçãp deles é uma serie maravilhosa voce deveria vez uma serie que meche com o emocional de tabom quando assiti chorei muito de tanta emoção todos os atores capricharam nas atuaçao deles todos eles foram maravilhosos é a melhor serie de toda a minha vida toda pessoa que é fan de bl recomenda essa serie para ver </p>
             
- <p><em>Por: Isabelly Vitoria</em></p>
+            <p><em>Por: Isabelly Vitoria</em></p>
             
             <div>
                 <button type="button">⭐ <span>0</span></button>
@@ -141,9 +191,14 @@ H1GHR MUSIC (2017):Criou um selo internacional ao lado do seu parceiro de longa 
 
     </main> 
 
+    
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema">
+        <span class="theme-icon"></span>
+    </button>
+
     <script>
         
-        const botoes = document.querySelectorAll("button");
+        const botoes = document.querySelectorAll("article button");
 
         botoes.forEach(function(botao) {
             let curtiu = false;
@@ -164,6 +219,25 @@ H1GHR MUSIC (2017):Criou um selo internacional ao lado do seu parceiro de longa 
 
                 texto.textContent = valorAtual; 
             });
+        });
+
+        
+        const btnTema = document.getElementById("theme-toggle");
+        const body = document.body;
+
+        
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark-mode");
+        }
+
+        btnTema.addEventListener("click", function() {
+            body.classList.toggle("dark-mode");
+
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
         });
     </script>
 </body> 
