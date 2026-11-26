@@ -1,54 +1,86 @@
-        body {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-        
-        body.dark-mode {
-            background-color: #141913;
-            color: #e6ebe4;
-        }
+body.dark-mode {
+    background-color: #141913;
+    color: #e6ebe4;
+}
 
-        
-        .theme-toggle {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            background-color: #ffffff;
-            border: 2px solid #526649;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
-        }
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
 
-        .theme-toggle:hover {
-            transform: scale(1.06);
-        }
+/* Organiza os artigos em colunas lado a lado */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        
-        .theme-icon {
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            background: linear-gradient(90deg, #394733 50%, #ffffff 50%);
-            border: 1px solid #394733;
-            transition: background 0.3s ease, border-color 0.3s ease;
-        }
+/* Estilo de cada coluna (card do post) */
+article {
+    border: 1px solid #52664940;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
 
-        
-        body.dark-mode .theme-toggle {
-            background-color: #1f261d;
-            border-color: #8da383;
-        }
+/* Imagens padronizadas em retângulos verticais sem cortes */
+article img {
+    width: 100%;
+    height: 380px;           /* Altura fixa igual para todas */
+    object-fit: contain;     /* Mostra a imagem inteira na vertical */
+    background-color: #0000000d;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
 
-        body.dark-mode .theme-icon {
-            background: linear-gradient(90deg, #ffffff 50%, #394733 50%);
-            border-color: #8da383;
-        }
+.theme-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #526649;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.06);
+}
+
+.theme-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #394733 50%, #ffffff 50%);
+    border: 1px solid #394733;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #1f261d;
+    border-color: #8da383;
+}
+
+body.dark-mode .theme-icon {
+    background: linear-gradient(90deg, #ffffff 50%, #394733 50%);
+    border-color: #8da383;
+}
